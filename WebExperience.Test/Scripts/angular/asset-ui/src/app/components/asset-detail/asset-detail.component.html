@@ -1,0 +1,36 @@
+<h1>Asset Details</h1>
+<div *ngIf="asset!=null">
+  <div class="row row-item">
+    <div class="col-md-3 control-label">Asset Id</div>
+    <div class="col-md-4">{{asset.AssetId}}</div>
+  </div>
+  <div class="row row-item">
+    <div class="col-md-3 control-label">File Name</div>
+    <div class="col-md-4">{{asset.FileName}}</div>
+  </div>
+  <div class="row row-item">
+    <div class="col-md-3 control-label">Mime Type</div>
+    <div class="col-md-4">{{asset.MimeType}}</div>
+  </div>
+  <div class="row row-item">
+    <div class="col-md-3 control-label">Created By</div>
+    <div class="col-md-4">{{asset.CreatedBy}}</div>
+  </div>
+  <div class="row row-item">
+    <div class="col-md-3 control-label">Email</div>
+    <div class="col-md-4">{{asset.AssetId}}</div>
+  </div>
+  <div class="row row-item">
+    <div class="col-md-3 control-label">Country</div>
+    <div class="col-md-4">{{asset.Country}}</div>
+  </div>
+  <div class="row row-item">
+    <div class="col-md-3 control-label">Description</div>
+    <div class="col-md-4">{{asset.Description}}</div>
+  </div>
+</div>
+
+
+<div class="row">
+  <button class="btn btn-primary" (click)="gotoList()">Go to Asset List</button>
+</div>

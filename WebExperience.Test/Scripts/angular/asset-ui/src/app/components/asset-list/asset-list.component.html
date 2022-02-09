@@ -1,0 +1,19 @@
+<h1>Asset List</h1>
+<div>
+  <table class="table table-stripped" width="100%">
+    <thead>
+      <tr>
+        <td>Id</td>
+        <td>File Name</td>
+        <td>Created By</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let asset of assetList" (click)="onRowSelect(asset)">
+        <td>{{asset.AssetId}}</td>
+        <td>{{asset.FileName}}</td>
+        <td>{{asset.CreatedBy}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
